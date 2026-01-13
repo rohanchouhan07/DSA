@@ -1,4 +1,3 @@
-#include<stdio.h>
 void linear_search(int a[],int r, int search)
 {
     int k=0,i;
