@@ -1,0 +1,15 @@
+DataTypes-
+Integer	-->1,2,3,4 (4 bytes)
+Float 	-->1.0,20.25,2.021 (4 bytes)
+String	-->Rohan, Akash 
+Char	-->a, b, c, d (1 bytes)
+Boolean -->True, False (1 bytes)
+
+Long  		-->(4 byte)--decimal
+Long int   	-->(8 byte)---| 
+Long Long	-->(8 byte)   | NO decimal
+Long Long  int  -->(12 byte)--|
+
+Double	-->(8 byte) =>Decimals
+
+Intger Bucket =variable (Store some data )
