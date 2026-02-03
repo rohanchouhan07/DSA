@@ -133,7 +133,7 @@ return(c);
 
 ==>  int add(int a,int b){  // defination
 
-&nbsp;   return (a+b);
+    return (a+b);
 
 }
 
@@ -143,5 +143,23 @@ return(c);
 
 
 
+Gcd 
 
+prime number 
+
+reverse digit 
+
+sum of digit 
+
+pattern -->fibonaci 
+
+&nbsp;	-->prime number 
+
+pascal triangle 
+
+binary decimal conversion 
+
+decimal to binary 
+
+armstrong number
 
