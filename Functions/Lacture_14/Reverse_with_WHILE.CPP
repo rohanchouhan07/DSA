@@ -8,7 +8,7 @@ int main(){
         rev=rev*10+k;
         n=n/10;
     }
-    cout<<rev;
+    cout<<rev;}
 // //for loop
 // for(int i=n;i!=0;i/10){
 //     int k=i%10;
