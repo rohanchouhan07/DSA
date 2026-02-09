@@ -1,0 +1,20 @@
+|
+|-->Need
+array 
+int rohan=50
+int krish=40
+int aayuh=10
+
+array remove the multiple alocation it will allcate the whole var in 1 
+
+int arr=[50,40,10]
+string size =24
+
+need-
+code aasan banana
+ek sath store karne ke liye kaam krta h 
+ek sath sate opreation perform karne ke liye
+
+
+position and indexing are differnet 
+position are the position of the element
