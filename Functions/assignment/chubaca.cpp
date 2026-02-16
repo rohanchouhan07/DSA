@@ -30,7 +30,7 @@ int main(){
     while(n!=0){
     int k=n%10;
     int inv=9-k;
-    if(len==0 && inv==0 ){
+    if(len==1 && inv==0 ){
         rev=rev*10+k;
         len--;
     }
