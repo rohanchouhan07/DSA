@@ -11,18 +11,26 @@ int sum(int n){
 	return(s);
 }
 int main() {
-	int n,n1,n2;
-	cin>>n>>n1>>n2;
-	int su=sum(n);
-	int su=sum(n1);
-	int su=sum(n2);
+	int n;
+	cin>>n;
+	int su;
+	int arr[n]={};
+	for(int i=1;i<=n;i++){
+		cin>>arr[i];	
+	}
+	for(int i=1;i<=n;i++){	
+		int su=sum(arr[i]);
+	}
     // cout<<su;
-	if(su % 4 == 0){
-		cout<<"Yes";
+	for(int i=1;i< n;i++){	
+		int su=sum(arr[i]);
+		
+		if(su % 3 == 0){
+			cout<<"Yes"<<endl;
+		}
+		else {
+			cout<<"No";
+		}
 	}
-	else if(su % 3 == 0){
-		cout<<"No";
-	}
-	
 	return 0;
 }

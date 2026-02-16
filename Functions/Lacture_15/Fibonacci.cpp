@@ -8,5 +8,5 @@ int main(){
     int n;
     cout<<"Enter a number: ";
     cin>>n;
-    cout<<"Fibonacci of "<<n<<" is: "<<fibo(n)<<endl;
+    cout<<fibo(n);
 }
