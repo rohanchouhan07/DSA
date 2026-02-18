@@ -2,23 +2,26 @@
 #include<cmath>
 using namespace std;
 
-int square(int n){
-    return n*n;
-}
+bool isHappy(int n) {
+        int  sum=0;
+        if(n==1 or n==7 or n==10){
+        return true;
+    }
+    else if(n<10){
+        return false;
+    }else{
+    while(n!=0){
+        int k= n%10;
+        sum=sum+k*k;
+        n/=10;
+        }
+
+        return isHappy(sum);
+    }
+    }
 int main(){
     int n;
     cin>>n;
-    int arr[]={};
-    while(n!=0){
-        int k= n%10;
-        cin>>arr[k];
-        if(pow(arr[1],2)+pow(arr[2],2)==1){
-            cout<<"True";
-        }  
-        else{
-            cout<<"False";
-        } 
-
-    }
-    return 0;
+    isHappy(n);
+    // return 0;
         }
