@@ -43,4 +43,11 @@ append()
 insert()
 erase()
 replace()
-substr()
+substr()    --> part of string can be shown
+find()      --> first position of any number we want to search
+compare()   -->compare
+at()        -->show the word indexing
+empty()     -->
+clear()     --> clear all the string
+swap()      -->swap the string values
+
