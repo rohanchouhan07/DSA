@@ -35,4 +35,5 @@ s[2]='h'
 s[3]='a'
 s[4]='n'
 
+joh indexing hum array me krte h use ham string me kr sakte h 
 
