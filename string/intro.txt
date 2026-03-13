@@ -1,0 +1,5 @@
+string --> jiske ander charcter array ho 
+{store multiple charcter at one known as "string" }
+
+like -
+R ,O ,H ,A ,N -->5 charcter = ROHAN -"one string"
