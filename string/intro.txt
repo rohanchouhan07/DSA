@@ -3,3 +3,36 @@ string --> jiske ander charcter array ho
 
 like -
 R ,O ,H ,A ,N -->5 charcter = ROHAN -"one string"
+
+string ans;
+cin>>ans;
+
+count whitespace
+
+
+"rohan has 2 legs"
+string nums;
+getline (cin,nums);
+
+
+treverse
+string s="rohan";
+for loop 
+i-0;i<s.size();i++{
+    cout<<s[i];
+}
+string ko array ki tarah treat kar sakte h 
+
+
+
+string =" "
+charcter=' '
+
+string ="rohan"
+s[0]='r'
+s[1]='o'
+s[2]='h'
+s[3]='a'
+s[4]='n'
+
+
