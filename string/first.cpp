@@ -5,6 +5,5 @@ int main() {
     // cin>>s;
     getline(cin,s);
     cout<<s;
-
     return 0;
 }

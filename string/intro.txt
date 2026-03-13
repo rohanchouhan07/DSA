@@ -37,3 +37,10 @@ s[4]='n'
 
 joh indexing hum array me krte h use ham string me kr sakte h 
 
+push_back()
+pop_back()
+append()
+insert()
+erase()
+replace()
+substr()
