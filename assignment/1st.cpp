@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     int n,m;
     cin>>n>>m;
-    if((m >=11 and m<=0) and (n >=11 and n<=0)){
+    if((m >=11 or m<=0) or (n >=11 or n<=0)){
         return 1;
     }
     vector<vector<int>> v(n, vector<int>(m)) ;
