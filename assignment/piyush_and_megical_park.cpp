@@ -25,10 +25,11 @@ int main() {
         }
     }
     if(s<=k){
-        cout<<"No";
+        cout<<"No"<<endl<<s;
+
     }
     else{
-        cout<<"Yes";
+        cout<<"Yes"<<endl<<s;
     }
 
     return 0;
