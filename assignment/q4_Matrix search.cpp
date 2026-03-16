@@ -13,7 +13,7 @@ int main() {
     }
     int t;
     int ans=0;
-    cout<<"enter target";
+    // cout<<"enter target";
     cin>>t;
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
@@ -21,7 +21,7 @@ int main() {
                 ans++;
             }
         }
-        cout<<endl;
+        // cout<<endl;
     }
     if(ans>0){
         cout<<1;
