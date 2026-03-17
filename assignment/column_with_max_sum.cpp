@@ -1,27 +1,36 @@
 #include <iostream>
+#include <climits> 
 using namespace std;
 
-int main() {
-    int n;
-    cin>>n;
-    int sum=0,s=sum;
-    int arr[n][n];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cin>>arr[i][j];
-        }
-    }
+//colum wise max find
+void  colSum(int mat[][100],int n){
+    int sum=INT_MIN;
+    int colIndex = -1;
 
     for(int i=0;i<n;i++){
-        int p=i;
+        int csum=0;
         for(int j=0;j<n;j++){
-            sum+=arr[i][j];
-            cout<<"max sum is:",sum;
+            csum +=mat[j][i];
         }
-    //     // if(s<=sum){
-    //     //     s=sum;
-    //     // }
+        if(csum > sum) {
+            sum = csum;
+            colIndex = i;  // store column index
+        }
     }
-    cout<<sum;
+    cout<<colIndex+1<<"   "<<sum;
+}
+
+int main(){
+   
+    int n;
+    cin>>n;
+    int mat[100][100];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cin>>mat[i][j];
+        }
+    }
+    
+    colSum(mat,n);
     return 0;
 }
