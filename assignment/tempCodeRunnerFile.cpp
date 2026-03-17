@@ -1,1 +1,1 @@
-arr
+cout<<arr[i][j]<<" ";
