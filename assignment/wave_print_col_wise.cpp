@@ -6,23 +6,20 @@ int main() {
     cin>>n>>m;
     int arr[n][m];
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+        for(int j=0;j<m;j++){
             cin>>arr[i][j];
         }
     }
-
-    cout<<endl;
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             if(i%2==0){
-                // cout<<arr[j][i]<<", ";
+                cout<<arr[j][i]<<", ";
             }
             else{
-                for(int j=(m-1);j>=0;){
-                    // cout<<arr[j][i]<<", ";
-                    cout<<j;
-                    j--;
+                for(int j=(m-1);j>=0;j--){
+                    cout<<arr[j][i]<<", ";
                 }
+                break;
             }
         }
     }
