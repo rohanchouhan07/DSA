@@ -4,11 +4,11 @@ using namespace std;
 
 int main() {
     int n,m;
-    cin>>n>>m;
-    if((m >=11 or m<=0) or (n >=11 or n<=0)){
+    cin>>n;
+    if((n >=100 or n<=4)){
         return 1;
     }
     else{
-        cout<<m<<n;
+        // cout<<m<<n;
     }
 }
