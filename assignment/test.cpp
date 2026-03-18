@@ -3,12 +3,11 @@
 using namespace std;
 
 int main() {
-    int n,m;
-    cin>>n;
-    if((n >=100 or n<=4)){
-        return 1;
-    }
-    else{
-        // cout<<m<<n;
+    // int n,m;
+    // cin>>n;
+    string str;
+    getline(cin,str);
+    for(int i=0;i<10;i++){
+        cout<<str<<" "<<"didi" <<endl;
     }
 }
