@@ -12,11 +12,9 @@ public:
         int n = mat[0].size();
         vector<int> result;
         
-        // There are m + n - 1 total diagonals
         for (int s = 0; s <= m + n - 2; ++s) {
-            // For even sums, we go UP: row decreases, col increases
             if (s % 2 == 0) {
-                int r = min(s, m - 1); // Start at the bottom-most possible row
+                int r = min(s, m - 1); 
                 int c = s - r;
                 while (r >= 0 && c < n) {
                     result.push_back(mat[r][c]);
@@ -24,9 +22,8 @@ public:
                     c++;
                 }
             } 
-            // For odd sums, we go DOWN: row increases, col decreases
             else {
-                int c = min(s, n - 1); // Start at the right-most possible column
+                int c = min(s, n - 1);
                 int r = s - c;
                 while (c >= 0 && r < m) {
                     result.push_back(mat[r][c]);
