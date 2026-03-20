@@ -1,16 +1,20 @@
 #include <iostream>
-#include<string>
-#include<cctype>
+#include <cctype>
+#include <string>
+
 using namespace std;
 
 int main() {
-    string s;
-    cin>>s;
-    int count=0;
-    for(int i=0;i<s.size();i++){
-        // if(isupper(s[i])){
-            cout<<isupper(s[i])+islower(s[i])<<endl;
-        // }
+    string s = "MyNameIsRohan";
+    
+    for (int i = 0; i < s.size(); i++) {
+        if (isupper(s[i])) {
+            if (i != 0) {
+                cout << endl;
+            }
+        }
+        cout << s[i];
     }
+    cout << endl; 
     return 0;
 }
