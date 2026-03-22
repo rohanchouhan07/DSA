@@ -1,25 +1,31 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
+#include<algorithm>
 using namespace std;
-
-int main()
-{
-    string s="aabb";
-    int st=0;
-    int ed=s.size()-1;
-    int flag=0;
-    while(st<ed){
-        if(s[st]==s[ed]){
-            flag++;
+int main(){
+    string s;
+    cin>>s;
+    int st=0; int end=s.size()-1;
+    int f=1;
+    reverse(s.begin(), s.end());
+    while(st<end){
+        if(s[st]!=s[end])
+        {
+            f=0;
+            break;
         }
-        st++;ed--;
-    }
+        st++;
+        end--;
 
-    if(flag==0){
-        cout<<"false";
+       
     }
-    else{
+    if(f==1){
         cout<<"true";
     }
-    return 0;
+    else{
+        cout<<"false";
+    }
+  
+
+   
 }

@@ -1,19 +1,35 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <unordered_map>
+#include <string>
 using namespace std;
 
-int main(){
-    string s;
-    getline(cin,s);
-    for(int i ; i<s.size();i++){
-      for(int j=i+1 ; j<s.size();j++){
-            if(s[i]==s[j]){
-                cout<<-1;
-            }
-            else{
-                cout<<s[i];
+int main() {
+    int t;
+    cin >> t;  // number of test cases
+    
+    while (t--) {
+        string s;
+        cin >> s;
+        unordered_map<char, int> freq;
+        
+        // Count frequency of each character
+        for (char c : s) {
+            freq[c]++;
+        }
+        
+        // Find first non-repeating character
+        char ans = '\0';
+        for (char c : s) {
+            if (freq[c] == 1) {
+                ans = c;
                 break;
             }
-        }  
+        }
+        
+        if (ans == '\0')
+            cout << -1 << endl;
+        else
+            cout << ans << endl;
     }
+    return 0;
 }
