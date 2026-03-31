@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<algorithm>
+// #includeu
 using namespace std;
 int main(){
     string s;
@@ -9,7 +10,7 @@ int main(){
     int f=1;
     reverse(s.begin(), s.end());
     while(st<end){
-        if(s[st]!=s[end])
+        if(tolower(s[st])!=tolower(s[end]))
         {
             f=0;
             break;
