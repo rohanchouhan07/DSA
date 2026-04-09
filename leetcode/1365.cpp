@@ -1,5 +1,6 @@
-class Solution {
-public:
+#include<iostream>
+#include<vector>
+using namespace std;
     int btao(vector<int> nums,int n){
         int cnt=0;
         for(int i=0;i<nums.size();i++){
@@ -18,4 +19,7 @@ public:
         return ans;
             
     }
-};
+int main(){
+    vector<int> nums={8,1,2,2,3};
+    smallerNumbersThanCurrent(nums);
+}
